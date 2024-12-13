@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- iconweb -->
+    <link rel="icon" type="imagepng" href="image/images index/ASEFA Logo 3.png" sizes="32x32">
+    <link rel="icon" type="imagepng" href="image/images index/ASEFA Logo 3.png" sizes="96x96">
+    <link rel="icon" type="imagepng" href="image/images index/ASEFA Logo 3.png" sizes="16x16">
+
+    <!-- Link css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/productdetil.css">
+
+    <!-- Link Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/producttype.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.8/countUp.umd.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <title>Asefa</title>
+</head>
+<body>
+    <header>
+        <div class="heabar_contact">
+            <div class="container_full">
+                <div class="container_contact_number">
+                    Tel : +(66)2-686-7777 Fax : +(66)2-686-7788
+                </div>
+
+                <div class="container_contact_link">
+                    <div class="container_contact_menu">
+                        <div class="container">
+                            <a href="#"><img src="image/images index/Facebook.png" alt="" class="link_facebook"></a>
+                        </div>
+                        <div class="container">
+                            <a href="#"><img src="image/images index/Youtube.png" alt="" class="link_youtube"></a>
+                        </div>
+                        <div class="container">
+                            <a href="#"><img src="image/images index/Line.png" alt="" class="link_line"></a>
+                        </div>
+                    </div>
+
+                    <div class="container_asefa_us_full">
+                        <ul class="main_asefa_menu">
+                            <a href="#"><li class="container_asefa_menu"><span>News&Medias</span></li></a>
+                            <a href="#"><li class="container_asefa_menu"><span>ASEFA ACADEMY</span></li></a>
+                            <a href="#"><li class="container_asefa_menu"><span>Careers</span></li></a>
+                            <a href="#"><li class="container_asefa_menu"><span>Contact us</span></li></a>
+                            <li class="container_menu_Language">
+                                <div class="box-language-eng" onclick="toggleLanguages()">
+                                    <img src="image/images index/English Language.png" alt="">
+                                    <span>EN</span>
+                                    <i class='bx bx-chevron-down'></i>
+                                </div>
+                                <div class="box-language-thai">
+                                    <i class='bx bxs-up-arrow'></i>
+                                    <a href="#">
+                                        <img src="image/images index/Thai Language.png" alt="">
+                                        <span>TH</span>
+                                        <i class='bx bx-chevron-down'></i>
+                                    </a>
+                                    
+                                </div>
+                            </li>
+                            <li class="container_menu_login">
+                                <div class="container_button_login">
+                                    <button type="button" class="btn btn-outline-light btn-sm" onclick="toggleLogin()">Log in</button>
+                                        <div class="menu-all-account-logout">
+                                            <i class='bx bxs-up-arrow'></i>
+                                            <div class="full-account-logout">
+                                                <div class="box-myaccount"><a href="#">My Account</a></div>
+                                                <div class="box-logout"><a href="#">Log out</a></div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </li>
+                            <li class="container_menu_search">
+                                <div class="container_button_search">
+                                    <div class="box-icon-search">
+                                        <i class='bx bx-search' onclick="toggleSearchForm()"></i>
+                                        <div class="container-search">
+                                            <i class='bx bxs-up-arrow'></i>
+                                            <div class="container-search-form">
+                                                <div class="search-form">
+                                                    <input type="text" placeholder=" Search Product Name, Service,etc.">
+                                                    <button type="button" name="submit" class="button-search-form">
+                                                        <i class='bx bx-search'></i>
+                                                    </button>                                        
+                                                </div>
+                                            </div>
+                                        </div>                                
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="navigation_menu">
+            <div class="navigation_logo">
+                <a href="#"><img src="image/images index/ASEFA Logo 3.png" alt="" width="36px"></a>
+            </div>
+
+            <div class="navigation_menu_full">
+                <ul class="navigation_menu_main">
+                    <a href="#"><li class="navigation_menu_asefa"><span>Home</span></li></a>
+                    <a href="#"><li class="navigation_menu_asefa"><span>About ASEFA</span></li></a>
+                    <a href="OurProducts&Services.html"><li class="navigation_menu_asefa"><span>Our Products & Services</span></li></a>
+                    <a href="#"><li class="navigation_menu_asefa"><span>ASEFA Solutions</span></li></a>
+                    <a href="#"><li class="navigation_menu_asefa"><span>Investor Relations</span></li></a>
+                    <a href="#"><li class="navigation_menu_asefa"><span>Sustainable development</span></li></a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="navigation_menu_screen">
+            <div class="full_menu_bar">
+                <div class="navigation_logo_screen">
+                    <a href="#"><img src="image/images index/ASEFA Logo 3.png" alt="" width="40px"></a>
+                </div>
+
+                <div class="menu_right">
+                    <div class="container_button_search">
+                        <div class="box-icon-search">
+                            <i class='bx bx-search' onclick="toggleSearchForm()"></i>
+                            <div class="container-search">
+                                <i class='bx bxs-up-arrow'></i>
+                                <div class="container-search-form">
+                                    <div class="search-form">
+                                        <input type="text" placeholder=" Search Product Name, Service,etc.">
+                                        <button type="button" name="submit" class="button-search-form">
+                                            <i class='bx bx-search'></i>
+                                        </button>                                        
+                                    </div>
+                                </div>
+                            </div>                                      
+                        </div>
+                    </div>
+                    <span class="openNav" onclick="openNav()">&#9776</span>
+                </div>
+            </div>  
+        </div>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#"><span>Home</span></a>
+            <a href="#"><span>About ASEFA</span></a>
+            <a href="OurProducts&Services.html"><span>Our Products & Services</span></a>
+            <a href="#"><span>ASEFA Solutions</span></a>
+            <a href="#"><span>Investor Relations</span></a>
+            <a href="#"><span>Sustainable development</span></a>
+            <a href="#"><span>News&Medias</span></a>
+            <a href="#"><span>ASEFA ACADEMY</span></a>
+            <a href="#"><span>Careers</span></a>
+            <a href="#"><span>Contact us</span></a>
+            <div class="container_button_login">
+                <button type="button" class="btn btn-outline-light btn-sm">Log in</button>
+            </div>
+            <div class="container_contact_menu">
+                <div class="container">
+                    <a href="#"><img src="image/images index/Facebook.png" alt="" class="link_facebook"></a>
+                </div>
+                <div class="container">
+                    <a href="#"><img src="image/images index/Youtube.png" alt="" class="link_youtube"></a>
+                </div>
+                <div class="container">
+                    <a href="#"><img src="image/images index/Line.png" alt="" class="link_line"></a>
+                </div>
+            </div> 
+            <li class="container_menu_Language">
+                <img src="image/images index/English Language.png" alt="">
+                <span>EN</span>
+                <i class='bx bx-chevron-down'></i>
+            </li>
+        </div>
+    </header>
+
+    <main>
+        <div class="slider-product-detail">
+            <div class="full-box-silder">
+                <div class="box-detail-silder">
+                    <div class="slider-nameproduct-detail">
+                        <p><a href="product-mv-modular.html">MV Modular SF6 Switchgear</a></p>
+                    </div>
+                    <div class="slider-nameproduct-detail active">
+                        <p><a href="product-mv-lv.html">MV/LV Compact Substation</a></p>
+                    </div>
+                    <div class="slider-nameproduct-detail">
+                        <p><a href="product-mv-modular.html">LV Main Distribution Switchboard (MDB)</a></p>
+                    </div>
+                    <div class="slider-nameproduct-detail">
+                        <p class="width-200"> <a href="product-mv-modular.html">LV Sub Distribution and Final Distribution Switchboard (SDB)</a></p>
+                    </div>
+                    <div class="slider-nameproduct-detail">
+                        <p><a href="product-mv-modular.html">Double Safety Door Switchboard</a></p>
+                    </div>
+                    <div class="slider-nameproduct-detail">
+                        <p><a href="product-mv-modular.html">Capacitor <br>Bank</a></p>
+                    </div>
+                    <div class="slider-nameproduct-detail">
+                        <p><a href="product-mv-modular.html">Motor Control <br>Center</a></p>
+                    </div>
+                    <div class="slider-nameproduct-detail">
+                        <p class="width-200"><a href="product-mv-modular.html">Control Automation Board/ <br> Distribution Automation (DA)</a></p>
+                    </div>
+                    <div class="slider-nameproduct-detail">
+                        <p><a href="product-mv-modular.html">Console & Control Desk and Control Box</a></p>
+                    </div>
+                    <div class="slider-nameproduct-detail">
+                        <p><a href="product-mv-modular.html">Isolation Transformer Panel (AIS)</a></p>
+                    </div>
+                    <div class="slider-nameproduct-detail">
+                        <p><a href="product-mv-modular.html">Power Distribution Unit Panel (APDU)</a></p>
+                    </div>
+                    <!-- <div class="chevron-detail-silder">
+                        <i class='bx bx-chevron-right'></i>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="main-product-detail mv-lv">
+            <div class="full-product-detail">
+                <div class="box-product-detail">
+                    <div class="manufacturer-asefa-model">
+                        <span>Manufacturer/ ASEFA Model</span>
+                    </div>
+                    <div class="box-header-section">
+                        <div class="header-name-product-detail">
+                            <span>MV Modular SF6 Switchgear</span>
+                        </div>
+                        <div class="box-section">
+                            <div class="name-section active"><a href="#finish" onclick="namesection(0)">Finish</a></div>
+                            <div class="name-section"><a href="#finish" onclick="namesection(1)">General Data</a></div>
+                            <div class="name-section"><a href="#generaldata" onclick="namesection(2)">Electrical Data</a></div>
+                            <div class="name-section"><a href="#electricaldata" onclick="namesection(3)">Mechanical Characteristics</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="general-technical-data">
+                    <div class="technical-data">General Technical Data</div>
+                    <div class="box-finish" id="finish">
+                        <div class="header-data">Finish</div>
+                        <img src="image/images product/Rectangle 26.png" alt="" onclick="openPopup(0)">
+                    </div>
+                    
+                    <div class="popup-container">
+                        <div class="popup-content">
+                            <div class="close-button" onclick="closePopup()">&times;</div>
+                            <img class="popup-image" src="image/images product/Rectangle 26.png" alt="">
+                        </div>
+                    </div>
+                      
+                    <div class="box-general-data" id="generaldata">
+                        <div class="header-data">General Data</div>
+                        <div class="full-general-data-detail">
+                            <div class="reference-standard">
+                                <div class="reference-header">Reference standard</div>
+                                <div class="reference-full">
+                                    <div class="reference-box">
+                                        <span>MV/LV prefabricated substation <br>(replaces IEC 61330)</span>
+                                        <div class="box-ice">IEC 62271-202</div>
+                                    </div>
+                                    <div class="reference-box">
+                                        <span>Common specifications for high voltage switchgear (replaces IEC 60694)</span>
+                                        <div class="box-ice">IEC 62271-1</div>
+                                    </div>
+                                    <div class="reference-box">
+                                        <span>AC metal-enclosed switchgear and controlgear for rated voltage up to 52kV</span>
+                                        <div class="box-ice">IEC 62271-200</div>
+                                    </div>
+                                </div>
+                                <div class="reference-full">
+                                    <div class="reference-box">
+                                        <span>Power transformers</span>
+                                        <div class="box-ice">IIEC 60076 </div>
+                                    </div>
+                                    <div class="reference-box">
+                                        <span>LV switchgear and controlgear assemblies </span>
+                                        <div class="box-ice">IEC 61439</div>
+                                    </div>
+                                    <div class="reference-box">
+                                        <span>Degrees of protection provided by enclosures </span>
+                                        <div class="box-ice">IEC 60529</div>
+                                    </div>
+                                </div>
+
+                                <div class="reference-data-box">
+                                    <div class="mechanical-data-header">Ambient <br>temperature</div>
+                                    <div>Normal operating conditions up to 40 0C</div>
+                                </div>
+
+                                <div class="reference-data-box">
+                                    <div class="mechanical-data-header">Outdoor operation</div>
+                                    <div>Yes</div>
+                                </div>
+
+                                <div class="reference-data-box">
+                                    <div class="mechanical-data-header">Compartmentalized <br>Design</div>
+                                    <div>Yes</div>
+                                </div>
+
+                                <div class="reference-data-box">
+                                    <div class="mechanical-data-header">Types of ventilation</div>
+                                    <div>Natural</div>
+                                </div>
+
+                                <div class="reference-data-box">
+                                    <div class="mechanical-data-header">Types of ventilation</div>
+                                    <div>Natural</div>
+                                </div>
+
+                                <div class="degree-box">
+                                    <div class="degree-header">Degree of standard protection</div>
+                                    <div class="box-degree-detill">
+                                        <div>MV & LV compartment</div>
+                                        <div>IP44 </div>
+                                    </div>
+                                    <div class="box-degree-detill">
+                                        <div>Transformer compartment</div>
+                                        <div>IP33</div>
+                                    </div>
+                                    <div class="box-degree-footer">
+                                        <p>* Special request such as painting or degree of protection, please contact us.
+                                            Enclosure temperature rise</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box-electrical-data" id="electricaldata">
+                        <div class="header-data">Electrical Data</div>
+                        <div class="electrical-data">
+                            <div class="electrical-data-header">Rated voltage (kV)</div>
+                            <div class="electrical-data-detail">
+                                <div class="electrical-data-text">
+                                    <p>Rated voltage (kV)</p>
+                                    <p>Rated insulation level 50 Hz, 1 sec</p>
+                                    <p>Lightning impluse withstand voltage (1.2/50 us)</p>
+                                </div>
+                                <div class="electrical-data-text">
+                                    <table>
+                                        <tr>
+                                                <td class="electrical-data-text-header"><li>Ur kV rms</li></td>
+                                                <td class="electrical-data-text-detail">7.2</td>
+                                                <td class="electrical-data-text-detail">12</td>
+                                                <td class="electrical-data-text-detail">24</td>
+                                                <td class="electrical-data-text-detail">36</td>
+                                        </tr>
+                                        <tr>
+                                                <td class="electrical-data-text-header"><li>Ur kV rms</li></td>
+                                                <td class="electrical-data-text-detail">20</td>
+                                                <td class="electrical-data-text-detail">28</td>
+                                                <td class="electrical-data-text-detail">50</td>
+                                                <td class="electrical-data-text-detail">70</td>
+                                        </tr>
+                                        <tr>
+                                                <td class="electrical-data-text-header"><li>Ur kV rms</li></td>
+                                                <td class="electrical-data-text-detail">60</td>
+                                                <td class="electrical-data-text-detail">75</td>
+                                                <td class="electrical-data-text-detail">125</td>
+                                                <td class="electrical-data-text-detail">170</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="electrical-data-header">Rated short circuit current (kA)</div>
+                            <div class="electrical-data-detail">
+                                <div class="electrical-data-text">
+                                    <p>Short time withstand current </p>
+                                    <p>Rated current </p>
+                                </div>
+                                <div class="electrical-data-text">
+                                    <table>
+                                        <tr>
+                                                <td class="electrical-data-text-header">lth. Max (kA/1s)</td>
+                                                <td class="electrical-data-text-detail">25</td>
+                                                <td class="electrical-data-text-detail">25</td>
+                                                <td class="electrical-data-text-detail">16,20</td>
+                                                <td class="electrical-data-text-detail">16</td>
+                                        </tr>
+                                        <tr>
+                                                <td class="electrical-data-text-header">In (A)</td>
+                                                <td class="electrical-data-text-detail">630</td>
+                                                <td class="electrical-data-text-detail">630</td>
+                                                <td class="electrical-data-text-detail">630</td>
+                                                <td class="electrical-data-text-detail">630</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box-mechanical-characteristics" id="mechanical">
+                        <div class="header-data">Mechanical Characteristics</div>
+                        <div class="mechanical-data">
+                            <div class="main-mechanical-data-header">
+                                <div class="mechanical-data-header">Degree of Protection</div>
+                                <div>According to IEC 60529 IP 2X</div>
+                            </div>
+
+                            <div class="table-box-dimensions">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <th rowspan="3" class="box-rated">Rated <br>voltage <br>(kV)</th>
+                                            <th colspan="10">Dimensions (mm)</th>
+                                        </tr>
+
+                                        <tr>
+                                            <th colspan="3" class="header-table">Width (W)</th>
+                                            <th colspan="3" class="header-table">Height (H)</th>
+                                            <th colspan="3" class="header-table">Depth (D)</th>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="header-td">IMA,<br>QMA</td>
+                                            <td class="header-td">IMAC,<br>QMAC</td>
+                                            <td class="header-td">BMA,<br>BMAC</td>
+
+                                            <td class="header-td">IMA,<br>QMA</td>
+                                            <td class="header-td">IMAC,<br>QMAC</td>
+                                            <td class="header-td">BMA,<br>BMAC</td>
+
+                                            <td class="header-td">IMA,<br>QMA</td>
+                                            <td class="header-td">IMAC,<br>QMAC</td>
+                                            <td class="header-td">BMA,<br>BMAC</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>7.2</td>
+                                            <td>500</td>
+                                            <td>500</td>
+                                            <td>500</td>
+                                            <td>1600</td>
+                                            <td>2050</td>
+                                            <td>2050</td>
+                                            <td>1200</td>
+                                            <td>1200</td>
+                                            <td>1200</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>12</td>
+                                            <td>500</td>
+                                            <td>500</td>
+                                            <td>500</td>
+                                            <td>1600</td>
+                                            <td>2050</td>
+                                            <td>2050</td>
+                                            <td>1200</td>
+                                            <td>1200</td>
+                                            <td>1200</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>24</td>
+                                            <td>500</td>
+                                            <td>500</td>
+                                            <td>500</td>
+                                            <td>1600</td>
+                                            <td>2050</td>
+                                            <td>2050</td>
+                                            <td>1200</td>
+                                            <td>1200</td>
+                                            <td>1200</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>36</td>
+                                            <td>800</td>
+                                            <td>-</td>
+                                            <td>800</td>
+                                            <td>2250</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>1560</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="main-mechanical-data-header">
+                                <div class="mechanical-data-header">Cable inlet</div>
+                                <div>Bottom entry</div>
+                            </div>
+
+                            <div class="main-mechanical-data-header">
+                                <div class="mechanical-data-header">Access</div>
+                                <div>Front</div>
+                            </div>
+
+                            <div class="main-mechanical-data-header">
+                                <div class="mechanical-data-header">Materials</div>
+                                <div>Cold roll steel sheet, Aluzinc <br>
+                                    Electro galvanized steel sheet
+                                </div>
+                            </div>
+
+                            <div class="main-mechanical-data-header">
+                                <div class="mechanical-data-header">Busbar</div>
+                                <div>Insulated with heat-shrinkable sleeving</div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-02">
+        <div class="container-footer-full">
+            <div class="asefa-publid">
+                <div class="asefa-publid-box">
+                    <div class="header-publid-logo">
+                        <img src="image/images index/ASEFA Logo 3.png" alt="" width="60px">
+                    </div>
+                    <div class="asefa-publid-header">
+                        <span>ASEFA PUBLIC COMPANY LIMITED</span>
+                    </div>
+                    <div class="asefa-publid-text">
+                        <p>5 Moo 1 Rama II Road Khok-krabue Mueang <br>
+                            Samutsakhon,t Samutsakhon 74000 Thailand <br>
+                            Tel : +(66)2-686-7777 Fax : +(66)2-686-7788</p>
+                    </div>
+                </div>
+
+                <div class="asefa-publid-box-screen">
+                    <div class="header-publid-logo">
+                    </div>
+                    <div class="asefa-publid-header">
+                        <img src="image/images index/ASEFA Logo 3.png" alt="" width="60px">
+                        <div class="asefa-publid-header-text">
+                            <span>ASEFA PUBLIC COMPANY LIMITED</span>
+                            <p>5 Moo 1 Rama II Road Khok-krabue Mueang
+                            Samutsakhon,t Samutsakhon 74000 Thailand
+                            Tel : +(66)2-686-7777 Fax : +(66)2-686-7788</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="container-footer-right-link">
+                <div class="container-footer">
+                  <ul>
+                    <div class="header-container-footer">CONTENT</div>
+                    <li><a href="#">About ASEFA</a></li>
+                    <li><a href="OurProducts&Services.html">Our Products & Services</a></li>
+                    <li><a href="#">Business Solutions</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Sustainable Development</a></li>
+                    <li><a href="#">News & Medias</a></li>
+                    <li><a href="#">ASEFA ACADEMY</a></li>
+                  </ul>
+                </div>
+                <div class="container-footer">
+                    <ul>
+                        <div class="header-container-footer">LEGAL</div>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">License Agreement</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy & Setting</a></li>
+                    </ul>
+                </div>
+                <div class="container-footer">
+                    <div class="containerfull">
+                        <ul>
+                            <div class="header-container-footer">INFORMATION</div>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                        <ul>
+                            <div class="header-container-footer-social">SOCIAL MEDIA</div>
+                            <li>
+                                <div class="container_contact_menu">
+                                    <div class="container">
+                                        <a href="#"><img src="image/images index/Facebook.png" alt="" class="link_facebook"></a>
+                                    </div>
+                                    <div class="container">
+                                        <a href="#"><img src="image/images index/Youtube.png" alt="" class="link_youtube"></a>
+                                    </div>
+                                    <div class="container">
+                                        <a href="#"><img src="image/images index/Line.png" alt="" class="link_line"></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>  
+        </div>
+
+        <div class="reserved">
+            <div>
+                <p>&copy;2022. All right reserved.</p>
+            </div>
+            
+            <div class="box-contact">
+                <p>Tel : +(66)2-686-7777 Fax : +(66)2-686-7788</p>
+                <div class="container_menu_Language">
+                    <img src="image/images index/English Language.png" alt="">
+                    <span>EN</span>
+                    <i class='bx bx-chevron-down'></i>
+                </div>
+            </div>
+        </div>          
+    </footer>
+
+</body>
+</html>

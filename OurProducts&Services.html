@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- iconweb -->
+    <link rel="icon" type="imagepng" href="image/images index/ASEFA Logo 3.png" sizes="32x32">
+    <link rel="icon" type="imagepng" href="image/images index/ASEFA Logo 3.png" sizes="96x96">
+    <link rel="icon" type="imagepng" href="image/images index/ASEFA Logo 3.png" sizes="16x16">
+
+    <!-- Link css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/product.css?v=9999">
+
+    <!-- Link Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.8/countUp.umd.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <title>Asefa</title>
+</head>
+    <body>
+        <header>
+            <div class="heabar_contact">
+                <div class="container_full">
+                    <div class="container_contact_number">
+                        Tel : +(66)2-686-7777 Fax : +(66)2-686-7788
+                    </div>
+    
+                    <div class="container_contact_link">
+                        <div class="container_contact_menu">
+                            <div class="container">
+                                <a href="#"><img src="image/images index/Facebook.png" alt="" class="link_facebook"></a>
+                            </div>
+                            <div class="container">
+                                <a href="#"><img src="image/images index/Youtube.png" alt="" class="link_youtube"></a>
+                            </div>
+                            <div class="container">
+                                <a href="#"><img src="image/images index/Line.png" alt="" class="link_line"></a>
+                            </div>
+                        </div>
+    
+                        <div class="container_asefa_us_full">
+                            <ul class="main_asefa_menu">
+                                <a href="#"><li class="container_asefa_menu"><span>News&Medias</span></li></a>
+                                <a href="#"><li class="container_asefa_menu"><span>ASEFA ACADEMY</span></li></a>
+                                <a href="#"><li class="container_asefa_menu"><span>Careers</span></li></a>
+                                <a href="#"><li class="container_asefa_menu"><span>Contact us</span></li></a>
+                                <li class="container_menu_Language">
+                                    <div class="box-language-eng" onclick="toggleLanguages()">
+                                        <img src="image/images index/English Language.png" alt="">
+                                        <span>EN</span>
+                                        <i class='bx bx-chevron-down'></i>
+                                    </div>
+                                    <div class="box-language-thai">
+                                        <i class='bx bxs-up-arrow'></i>
+                                        <a href="#">
+                                            <img src="image/images index/Thai Language.png" alt="">
+                                            <span>TH</span>
+                                            <i class='bx bx-chevron-down'></i>
+                                        </a>
+                                        
+                                    </div>
+                                </li>
+                                <li class="container_menu_login">
+                                    <div class="container_button_login">
+                                        <button type="button" class="btn btn-outline-light btn-sm" onclick="toggleLogin()">Log in</button>
+                                            <div class="menu-all-account-logout">
+                                                <i class='bx bxs-up-arrow'></i>
+                                                <div class="full-account-logout">
+                                                    <div class="box-myaccount"><a href="#">My Account</a></div>
+                                                    <div class="box-logout"><a href="#">Log out</a></div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </li>
+                                <li class="container_menu_search">
+                                    <div class="container_button_search">
+                                        <div class="box-icon-search">
+                                            <i class='bx bx-search' onclick="toggleSearchForm()"></i>
+                                            <div class="container-search">
+                                                <i class='bx bxs-up-arrow'></i>
+                                                <div class="container-search-form">
+                                                    <div class="search-form">
+                                                        <input type="text" placeholder=" Search Product Name, Service,etc.">
+                                                        <button type="button" name="submit" class="button-search-form">
+                                                            <i class='bx bx-search'></i>
+                                                        </button>                                        
+                                                    </div>
+                                                </div>
+                                            </div>                                
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="navigation_menu">
+                <div class="navigation_logo">
+                    <a href="index.html"><img src="image/images index/ASEFA Logo 3.png" alt="" width="36px"></a>
+                </div>
+    
+                <div class="navigation_menu_full">
+                    <ul class="navigation_menu_main">
+                        <a href="index.html"><li class="navigation_menu_asefa"><span>Home</span></li></a>
+                        <a href="#"><li class="navigation_menu_asefa"><span>About ASEFA</span></li></a>
+                        <a href="OurProducts&Services.html"><li class="navigation_menu_asefa acvite"><span>Our Products & Services</span></li></a>
+                        <a href="#"><li class="navigation_menu_asefa"><span>ASEFA Solutions</span></li></a>
+                        <a href="#"><li class="navigation_menu_asefa"><span>Investor Relations</span></li></a>
+                        <a href="#"><li class="navigation_menu_asefa"><span>Sustainable development</span></li></a>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="navigation_menu_screen">
+                <div class="full_menu_bar">
+                    <div class="navigation_logo_screen">
+                        <a href="index.html"><img src="image/images index/ASEFA Logo 3.png" alt="" width="40px"></a>
+                    </div>
+    
+                    <div class="menu_right">
+                        <div class="container_button_search">
+                            <div class="box-icon-search">
+                                <i class='bx bx-search' onclick="toggleSearchForm()"></i>
+                                <div class="container-search">
+                                    <i class='bx bxs-up-arrow'></i>
+                                    <div class="container-search-form">
+                                        <div class="search-form">
+                                            <input type="text" placeholder=" Search Product Name, Service,etc.">
+                                            <button type="button" name="submit" class="button-search-form">
+                                                <i class='bx bx-search'></i>
+                                            </button>                                        
+                                        </div>
+                                    </div>
+                                </div>                                      
+                            </div>
+                        </div>
+                        <span class="openNav" onclick="openNav()">&#9776</span>
+                    </div>
+                </div>  
+            </div>
+    
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html"><span>Home</span></a>
+                <a href="#"><span>About ASEFA</span></a>
+                <a href="OurProducts&Services.html"><span>Our Products & Services</span></a>
+                <a href="#"><span>ASEFA Solutions</span></a>
+                <a href="#"><span>Investor Relations</span></a>
+                <a href="#"><span>Sustainable development</span></a>
+                <a href="#"><span>News&Medias</span></a>
+                <a href="#"><span>ASEFA ACADEMY</span></a>
+                <a href="#"><span>Careers</span></a>
+                <a href="#"><span>Contact us</span></a>
+                <div class="container_button_login">
+                    <button type="button" class="btn btn-outline-light btn-sm">Log in</button>
+                </div>
+                <div class="container_contact_menu">
+                    <div class="container">
+                        <a href="#"><img src="image/images index/Facebook.png" alt="" class="link_facebook"></a>
+                    </div>
+                    <div class="container">
+                        <a href="#"><img src="image/images index/Youtube.png" alt="" class="link_youtube"></a>
+                    </div>
+                    <div class="container">
+                        <a href="#"><img src="image/images index/Line.png" alt="" class="link_line"></a>
+                    </div>
+                </div> 
+                <li class="container_menu_Language">
+                    <img src="image/images index/English Language.png" alt="">
+                    <span>EN</span>
+                    <i class='bx bx-chevron-down'></i>
+                </li>
+            </div>
+        </header>
+
+        <main>
+            <div class="main_slide">
+                <div class="slide_bar">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="image/images product/Picture.png" class="d-block w-100" alt="">
+                                <div class="container-menu-page">
+                                    <div class="full-menu-page d-flex flex-column">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active " aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="" aria-label="Slide 3"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="" aria-label="Slide 4"></button>
+                                        </div>
+                                        <div class="message-header">
+                                            <p>ASEFA Products & Services</p>
+                                        </div>
+                                        <div class="border-color">
+                                            <div class="border-color-o"></div>
+                                            <div class="border-color-b"></div>
+                                            <div class="border-color-y"></div>
+                                            <div class="border-color-r"></div>
+                                        </div>
+                                        <div class="detail-topic">
+                                            <p>Manufacturer</p>
+                                        </div>
+                                        <div class="detail-overview">
+                                            <p>Electrical Power and Control Switchboards</p>
+                                        </div>
+                                        <div class="box-buttom">
+                                            <a href="manufacturer.html" target="_black">
+                                            <div class="d-flex align-items-center h-100">
+                                                <div class="message-learn">
+                                                    <span>Learn more</span>
+                                                </div>
+                                                <i class='bx bx-chevron-right'></i>
+                                            </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="image/images product/Picture-1.png" class="d-block w-100" alt="">
+                                <div class="container-menu-page">
+                                    <div class="full-menu-page d-flex flex-column">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="active" aria-current="true"aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="" aria-label="Slide 3"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="" aria-label="Slide 4"></button>
+                                        </div>
+                                        <div class="message-header">
+                                            <p>ASEFA Products & Services</p>
+                                        </div>
+                                        <div class="border-color">
+                                            <div class="border-color-o"></div>
+                                            <div class="border-color-b"></div>
+                                            <div class="border-color-y"></div>
+                                            <div class="border-color-r"></div>
+                                        </div>
+                                        <div class="detail-topic">
+                                            <p>Sourcing and Supply</p>
+                                        </div>
+                                        <div class="box-buttom">
+                                            <a href="SourcingandSupply.html" target="_black">
+                                            <div class="d-flex align-items-center h-100">
+                                                <div class="message-learn">
+                                                    <span>Learn more</span>
+                                                </div>
+                                                <i class='bx bx-chevron-right'></i>
+                                            </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="image/images product/Picture-2.png" class="d-block w-100" alt="">
+                                <div class="container-menu-page">
+                                    <div class="full-menu-page d-flex flex-column">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class=""  aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="active" aria-current="true" aria-label="Slide 3"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="" aria-label="Slide 4"></button>
+                                        </div>
+                                        <div class="message-header">
+                                            <p>ASEFA Products & Services</p>
+                                        </div>
+                                        <div class="border-color">
+                                            <div class="border-color-o"></div>
+                                            <div class="border-color-b"></div>
+                                            <div class="border-color-y"></div>
+                                            <div class="border-color-r"></div>
+                                        </div>
+                                        <div class="detail-topic">
+                                            <p>System Integration</p>
+                                        </div>
+                                        <div class="box-buttom">
+                                            <a href="SystemIntegration.html" target="_black">
+                                            <div class="d-flex align-items-center h-100">
+                                                <div class="message-learn">
+                                                    <span>Learn more</span>
+                                                </div>
+                                                <i class='bx bx-chevron-right'></i>
+                                            </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                            <img src="image/images product/Picture-3.png" class="d-block w-100" alt="">
+                                <div class="container-menu-page">
+                                    <div class="full-menu-page d-flex flex-column">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class=""  aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class=""  aria-label="Slide 3"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="active" aria-current="true" aria-label="Slide 4"></button>
+                                        </div>
+                                        <div class="message-header">
+                                            <p>ASEFA Products & Services</p>
+                                        </div>
+                                        <div class="border-color">
+                                            <div class="border-color-o"></div>
+                                            <div class="border-color-b"></div>
+                                            <div class="border-color-y"></div>
+                                            <div class="border-color-r"></div>
+                                        </div>
+                                        <div class="detail-topic">
+                                            <p>Services</p>
+                                        </div>
+                                        <div class="box-buttom">
+                                            <a href="Services.html" target="_black">
+                                            <div class="d-flex align-items-center h-100">
+                                                <div class="message-learn">
+                                                    <span>Learn more</span>
+                                                </div>
+                                                <i class='bx bx-chevron-right'></i>
+                                            </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="images-slidre-bar mw-100">
+                <div class="container-concategory d-flex mw-100 flex-column">
+                    <div class="text-category">
+                        <span>Category</span>
+                    </div>
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="images-category d-flex">
+                            <img src="image/images product/Group 274.png" class="indicator-image active" alt="" data-bs-target="#carouselExampleIndicators" 
+                            data-bs-slide-to="0" aria-current="true" aria-label="Slide 1">
+                            <img src="image/images product/Group 277.png" class="indicator-image" alt="" data-bs-target="#carouselExampleIndicators" 
+                            data-bs-slide-to="1" aria-label="Slide 2">
+                            <img src="image/images product/Group 275.png" class="indicator-image" alt="" data-bs-target="#carouselExampleIndicators" 
+                            data-bs-slide-to="2" aria-label="Slide 3">
+                            <img src="image/images product/Group 276.png" class="indicator-image" alt="" data-bs-target="#carouselExampleIndicators" 
+                            data-bs-slide-to="3" aria-label="Slide 4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var indicatorButtons = document.querySelectorAll(".carousel-indicators button");
+            var indicatorImages = document.querySelectorAll(".images-category .indicator-image");
+            var carouselItems = document.querySelectorAll(".carousel-item");
+          
+            indicatorButtons.forEach(function(button, index) {
+              button.addEventListener("click", function() {
+                removeActiveClass(indicatorImages);
+                addActiveClass(indicatorImages[index]);
+              });
+            });
+          
+            document.querySelector(".carousel").addEventListener("slide.bs.carousel", function(event) {
+              var activeIndex = Array.from(carouselItems).indexOf(event.relatedTarget);
+              removeActiveClass(indicatorImages);
+              addActiveClass(indicatorImages[activeIndex]);
+            });
+          
+            function removeActiveClass(elements) {
+              elements.forEach(function(element) {
+                element.classList.remove("active");
+              });
+            }
+          
+            function addActiveClass(element) {
+              element.classList.add("active");
+            }
+          });
+          
+    </script>
+
+    </body>
+</html>

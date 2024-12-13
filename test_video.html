@@ -1,0 +1,92 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>เล่น 2 video ใน timeline เดียวกัน</title>
+
+  <style>
+    video {
+      width: 50%;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <video id="combinedVideo" controls>
+    <source src="video/SSO Connect.mp4" type="video/mp4">
+    <source src="video/Jolly.mp4" type="video/mp4">
+  </video>
+
+  <script>
+    
+    const combinedVideo = document.getElementById('combinedVideo');
+    const videos = ['video/SSO Connect.mp4', 'video/Jolly.mp4'];
+    let currentVideoIndex = 0;
+
+    combinedVideo.addEventListener('ended', () => {
+      if (currentVideoIndex < videos.length - 1) {
+        currentVideoIndex++;
+        combinedVideo.src = videos[currentVideoIndex];
+        combinedVideo.play();
+      } else {
+        combinedVideo.removeEventListener('ended', handleVideoEnded);
+      }
+    });
+
+    function handleVideoEnded() {
+
+    }
+
+    combinedVideo.addEventListener('ended', handleVideoEnded);
+
+  </script>
+</body>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>รวมไฟล์วิดีโอ</title>
+</head>
+<body>
+  <video id="mergedVideo" controls>
+  </video>
+
+  <script>
+    // Assume you have an array of video file URLs
+    const videoFiles = ['video/Jolly.mp4', 'video/SSO Connect.mp4'];
+
+    // Function to merge video files
+    async function mergeVideos(videoFiles) {
+      const mergedBlob = await fetchAndMerge(videoFiles);
+      const videoPlayer = document.getElementById('mergedVideo');
+      
+      // Set the source of the video element to the merged video blob
+      videoPlayer.srcObject = URL.createObjectURL(mergedBlob);
+    }
+
+    // Function to fetch and merge video files
+    async function fetchAndMerge(videoFiles) {
+      const blobs = await Promise.all(videoFiles.map(fetchBlob));
+      return new Blob(blobs, { type: 'video/mp4' });
+    }
+
+    // Function to fetch a blob from a video file URL
+    async function fetchBlob(videoFile) {
+      const response = await fetch(videoFile);
+      const arrayBuffer = await response.arrayBuffer();
+      return new Blob([arrayBuffer], { type: 'video/mp4' });
+    }
+
+    // Call the mergeVideos function
+    mergeVideos(videoFiles);
+  </script>
+</body>
+</html>
